@@ -133,7 +133,7 @@ def get_audio():
 
 # --- AI Assistant API ---
 def mini_ai_assistant(command):
-    API_KEY = "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"
+    API_KEY = "My-Groq-API"
     API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
     conversation_history = [{"role": "system", "content": "You are Mini AI, a helpful assistant."}]
