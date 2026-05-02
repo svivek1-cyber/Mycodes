@@ -24,6 +24,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import API
 
 # --- Function to Create Sphere Animation ---
 def create_sphere():
@@ -133,7 +134,7 @@ def get_audio():
 
 # --- AI Assistant API ---
 def mini_ai_assistant(command):
-    API_KEY = "My-Groq-API"
+    API_KEY = API.GROQ_API_KEY
     API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
     conversation_history = [{"role": "system", "content": "You are Mini AI, a helpful assistant."}]
